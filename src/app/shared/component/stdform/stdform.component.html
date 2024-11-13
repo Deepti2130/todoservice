@@ -1,0 +1,64 @@
+
+    <form #stdform="ngForm" (ngSubmit)="onstdAdd()">
+      <div class="card">
+        <div class="card-header">
+          <h3 class="m-0">Add Student Details</h3>
+        </div>
+        <div class="card-body">
+      <div class="form-group">
+        <label for="fname">First Name</label>
+        <input
+          class="form-control"
+          required
+          ngModel
+          id="fname"
+          name="fname"
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="lname">Last Name</label>
+        <input
+          class="form-control"
+          required
+          ngModel
+          id="lname"
+          name="lname"
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          class="form-control"
+          required
+          ngModel
+          id="email"
+          name="email"
+          type="text"
+        />
+      </div>
+      <div class="form-group">
+        <label for="contact">Contact</label>
+        <input
+          class="form-control"
+
+          ngModel
+          id="contact"
+          name="contact"
+          type="text"
+        />
+      </div>
+
+
+    </div>
+    <div class="card-footer">
+      <button
+      type="submit"
+      [disabled]="stdform.invalid"
+      mat-raised-button color="primary">Add Student</button>
+    </div>
+  </div>
+    </form>
+
+
